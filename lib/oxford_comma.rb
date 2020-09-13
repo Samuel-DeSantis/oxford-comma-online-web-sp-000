@@ -6,4 +6,5 @@ def oxford_comma(array)
     end
     new_array << "#{item}, "
   end
+  return new_array
 end
