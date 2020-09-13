@@ -9,6 +9,7 @@ def oxford_comma(array)
     array.each do |item|
       unless item === array[array.length-1]
         new_array << "and #{item}"
+        next
       end
       new_array << "#{item}, "
     end
