@@ -6,7 +6,7 @@ def oxford_comma(array)
   when 2
     return "#{array[0]} and #{array[1]}"
   else
-    array.each do |item| 
+    array.each do |item|
       unless item === array[array.length-1]
         new_array << "and #{item}"
       end
