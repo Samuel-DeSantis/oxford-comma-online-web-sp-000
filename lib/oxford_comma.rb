@@ -1,10 +1,15 @@
 def oxford_comma(array)
   new_array = []
-  array.each do |item|
-    unless array[array.length] === item
+  case array.length
+  when 1
+    return "#{array}"
+  when 2
+    return "#{array[0]} and #{array[1]}"
+  else
+    unless item === array[array.length-1]
       new_array << "and #{item}"
     end
-    new_array << "#{item}, "
+    array.each { |item| new_array << "#{item}, "}
   end
-  return new_array
+    
 end
